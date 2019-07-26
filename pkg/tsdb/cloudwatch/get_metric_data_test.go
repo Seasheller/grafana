@@ -4,10 +4,10 @@ import (
 	"testing"
 	"time"
 
+	"github.com/Seasheller/grafana/pkg/components/null"
+	"github.com/Seasheller/grafana/pkg/tsdb"
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/cloudwatch"
-	"github.com/grafana/grafana/pkg/components/null"
-	"github.com/grafana/grafana/pkg/tsdb"
 	. "github.com/smartystreets/goconvey/convey"
 )
 

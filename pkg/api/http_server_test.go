@@ -3,7 +3,7 @@ package api
 import (
 	"testing"
 
-	"github.com/grafana/grafana/pkg/setting"
+	"github.com/Seasheller/grafana/pkg/setting"
 	. "github.com/smartystreets/goconvey/convey"
 )
 

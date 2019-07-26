@@ -1,10 +1,10 @@
 package api
 
 import (
-	"github.com/grafana/grafana/pkg/api/pluginproxy"
-	"github.com/grafana/grafana/pkg/infra/metrics"
-	m "github.com/grafana/grafana/pkg/models"
-	"github.com/grafana/grafana/pkg/plugins"
+	"github.com/Seasheller/grafana/pkg/api/pluginproxy"
+	"github.com/Seasheller/grafana/pkg/infra/metrics"
+	m "github.com/Seasheller/grafana/pkg/models"
+	"github.com/Seasheller/grafana/pkg/plugins"
 )
 
 func (hs *HTTPServer) ProxyDataSourceRequest(c *m.ReqContext) {

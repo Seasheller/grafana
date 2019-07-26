@@ -1,10 +1,10 @@
 package api
 
 import (
-	"github.com/grafana/grafana/pkg/api/dtos"
-	"github.com/grafana/grafana/pkg/bus"
-	"github.com/grafana/grafana/pkg/components/apikeygen"
-	"github.com/grafana/grafana/pkg/models"
+	"github.com/Seasheller/grafana/pkg/api/dtos"
+	"github.com/Seasheller/grafana/pkg/bus"
+	"github.com/Seasheller/grafana/pkg/components/apikeygen"
+	"github.com/Seasheller/grafana/pkg/models"
 	"time"
 )
 

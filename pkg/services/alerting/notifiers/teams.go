@@ -3,10 +3,10 @@ package notifiers
 import (
 	"encoding/json"
 
-	"github.com/grafana/grafana/pkg/bus"
-	"github.com/grafana/grafana/pkg/infra/log"
-	"github.com/grafana/grafana/pkg/models"
-	"github.com/grafana/grafana/pkg/services/alerting"
+	"github.com/Seasheller/grafana/pkg/bus"
+	"github.com/Seasheller/grafana/pkg/infra/log"
+	"github.com/Seasheller/grafana/pkg/models"
+	"github.com/Seasheller/grafana/pkg/services/alerting"
 )
 
 func init() {

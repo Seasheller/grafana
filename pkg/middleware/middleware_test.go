@@ -13,14 +13,14 @@ import (
 	. "github.com/smartystreets/goconvey/convey"
 	"gopkg.in/macaron.v1"
 
-	"github.com/grafana/grafana/pkg/api/dtos"
-	"github.com/grafana/grafana/pkg/bus"
-	"github.com/grafana/grafana/pkg/infra/remotecache"
-	"github.com/grafana/grafana/pkg/models"
-	"github.com/grafana/grafana/pkg/services/auth"
-	"github.com/grafana/grafana/pkg/services/login"
-	"github.com/grafana/grafana/pkg/setting"
-	"github.com/grafana/grafana/pkg/util"
+	"github.com/Seasheller/grafana/pkg/api/dtos"
+	"github.com/Seasheller/grafana/pkg/bus"
+	"github.com/Seasheller/grafana/pkg/infra/remotecache"
+	"github.com/Seasheller/grafana/pkg/models"
+	"github.com/Seasheller/grafana/pkg/services/auth"
+	"github.com/Seasheller/grafana/pkg/services/login"
+	"github.com/Seasheller/grafana/pkg/setting"
+	"github.com/Seasheller/grafana/pkg/util"
 	"github.com/stretchr/testify/assert"
 )
 

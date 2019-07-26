@@ -8,7 +8,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/grafana/grafana/pkg/models"
+	"github.com/Seasheller/grafana/pkg/models"
 )
 
 func TestStateIsUpdatedWhenNeeded(t *testing.T) {

@@ -3,7 +3,7 @@ package apikeygen
 import (
 	"testing"
 
-	"github.com/grafana/grafana/pkg/util"
+	"github.com/Seasheller/grafana/pkg/util"
 	. "github.com/smartystreets/goconvey/convey"
 )
 

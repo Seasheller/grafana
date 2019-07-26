@@ -7,12 +7,12 @@ import (
 	"strconv"
 	"strings"
 
+	"github.com/Seasheller/grafana/pkg/infra/log"
+	"github.com/Seasheller/grafana/pkg/models"
+	"github.com/Seasheller/grafana/pkg/tsdb"
 	"github.com/aws/aws-sdk-go/aws/awserr"
 	"github.com/aws/aws-sdk-go/service/ec2/ec2iface"
 	"github.com/aws/aws-sdk-go/service/resourcegroupstaggingapi/resourcegroupstaggingapiiface"
-	"github.com/grafana/grafana/pkg/infra/log"
-	"github.com/grafana/grafana/pkg/models"
-	"github.com/grafana/grafana/pkg/tsdb"
 	"golang.org/x/sync/errgroup"
 )
 

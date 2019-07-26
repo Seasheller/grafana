@@ -13,10 +13,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/grafana/grafana/pkg/infra/log"
-	"github.com/grafana/grafana/pkg/registry"
-	"github.com/grafana/grafana/pkg/setting"
-	"github.com/grafana/grafana/pkg/util"
+	"github.com/Seasheller/grafana/pkg/infra/log"
+	"github.com/Seasheller/grafana/pkg/registry"
+	"github.com/Seasheller/grafana/pkg/setting"
+	"github.com/Seasheller/grafana/pkg/util"
 )
 
 var (

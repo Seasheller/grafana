@@ -5,7 +5,7 @@ import (
 	"path"
 	"path/filepath"
 
-	"github.com/grafana/grafana/pkg/cmd/grafana-cli/logger"
+	"github.com/Seasheller/grafana/pkg/cmd/grafana-cli/logger"
 )
 
 func GetGrafanaPluginDir(currentOS string) string {

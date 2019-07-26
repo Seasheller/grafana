@@ -7,7 +7,7 @@ import (
 
 	. "github.com/smartystreets/goconvey/convey"
 
-	m "github.com/grafana/grafana/pkg/models"
+	m "github.com/Seasheller/grafana/pkg/models"
 )
 
 func TestTeamCommandsAndQueries(t *testing.T) {

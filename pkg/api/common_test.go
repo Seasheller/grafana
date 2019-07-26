@@ -5,10 +5,10 @@ import (
 	"net/http/httptest"
 	"path/filepath"
 
-	"github.com/grafana/grafana/pkg/bus"
-	"github.com/grafana/grafana/pkg/middleware"
-	m "github.com/grafana/grafana/pkg/models"
-	"github.com/grafana/grafana/pkg/services/auth"
+	"github.com/Seasheller/grafana/pkg/bus"
+	"github.com/Seasheller/grafana/pkg/middleware"
+	m "github.com/Seasheller/grafana/pkg/models"
+	"github.com/Seasheller/grafana/pkg/services/auth"
 	. "github.com/smartystreets/goconvey/convey"
 	"gopkg.in/macaron.v1"
 )

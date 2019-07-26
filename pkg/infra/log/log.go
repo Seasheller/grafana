@@ -10,8 +10,8 @@ import (
 	"path/filepath"
 	"strings"
 
+	"github.com/Seasheller/grafana/pkg/util"
 	"github.com/go-stack/stack"
-	"github.com/grafana/grafana/pkg/util"
 	"github.com/inconshreveable/log15"
 	isatty "github.com/mattn/go-isatty"
 	"gopkg.in/ini.v1"

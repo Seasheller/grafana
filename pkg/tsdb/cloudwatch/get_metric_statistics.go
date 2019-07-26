@@ -10,14 +10,14 @@ import (
 	"strings"
 	"time"
 
+	"github.com/Seasheller/grafana/pkg/components/null"
+	"github.com/Seasheller/grafana/pkg/components/simplejson"
+	"github.com/Seasheller/grafana/pkg/infra/metrics"
+	"github.com/Seasheller/grafana/pkg/setting"
+	"github.com/Seasheller/grafana/pkg/tsdb"
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/request"
 	"github.com/aws/aws-sdk-go/service/cloudwatch"
-	"github.com/grafana/grafana/pkg/components/null"
-	"github.com/grafana/grafana/pkg/components/simplejson"
-	"github.com/grafana/grafana/pkg/infra/metrics"
-	"github.com/grafana/grafana/pkg/setting"
-	"github.com/grafana/grafana/pkg/tsdb"
 )
 
 func (e *CloudWatchExecutor) executeQuery(ctx context.Context, query *CloudWatchQuery, queryContext *tsdb.TsdbQuery) (*tsdb.QueryResult, error) {

@@ -3,16 +3,16 @@ package mysql
 import (
 	"database/sql"
 	"fmt"
-	"github.com/grafana/grafana/pkg/setting"
+	"github.com/Seasheller/grafana/pkg/setting"
 	"reflect"
 	"strconv"
 	"strings"
 
+	"github.com/Seasheller/grafana/pkg/infra/log"
+	"github.com/Seasheller/grafana/pkg/models"
+	"github.com/Seasheller/grafana/pkg/tsdb"
 	"github.com/go-sql-driver/mysql"
 	"github.com/go-xorm/core"
-	"github.com/grafana/grafana/pkg/infra/log"
-	"github.com/grafana/grafana/pkg/models"
-	"github.com/grafana/grafana/pkg/tsdb"
 )
 
 func init() {

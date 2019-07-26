@@ -8,9 +8,9 @@ import (
 	"strings"
 	"time"
 
-	m "github.com/grafana/grafana/pkg/models"
-	"github.com/grafana/grafana/pkg/services/rendering"
-	"github.com/grafana/grafana/pkg/util"
+	m "github.com/Seasheller/grafana/pkg/models"
+	"github.com/Seasheller/grafana/pkg/services/rendering"
+	"github.com/Seasheller/grafana/pkg/util"
 )
 
 func (hs *HTTPServer) RenderToPng(c *m.ReqContext) {

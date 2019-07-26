@@ -6,10 +6,10 @@ import (
 
 	. "github.com/smartystreets/goconvey/convey"
 
-	"github.com/grafana/grafana/pkg/models"
-	"github.com/grafana/grafana/pkg/services/ldap"
-	"github.com/grafana/grafana/pkg/services/multildap"
-	"github.com/grafana/grafana/pkg/setting"
+	"github.com/Seasheller/grafana/pkg/models"
+	"github.com/Seasheller/grafana/pkg/services/ldap"
+	"github.com/Seasheller/grafana/pkg/services/multildap"
+	"github.com/Seasheller/grafana/pkg/setting"
 )
 
 var errTest = errors.New("Test error")

@@ -10,19 +10,19 @@ import (
 	"testing"
 	"time"
 
-	"github.com/grafana/grafana/pkg/components/securejsondata"
+	"github.com/Seasheller/grafana/pkg/components/securejsondata"
 
 	"golang.org/x/oauth2"
 	macaron "gopkg.in/macaron.v1"
 
-	"github.com/grafana/grafana/pkg/bus"
-	"github.com/grafana/grafana/pkg/components/simplejson"
-	"github.com/grafana/grafana/pkg/infra/log"
-	"github.com/grafana/grafana/pkg/login/social"
-	m "github.com/grafana/grafana/pkg/models"
-	"github.com/grafana/grafana/pkg/plugins"
-	"github.com/grafana/grafana/pkg/setting"
-	"github.com/grafana/grafana/pkg/util"
+	"github.com/Seasheller/grafana/pkg/bus"
+	"github.com/Seasheller/grafana/pkg/components/simplejson"
+	"github.com/Seasheller/grafana/pkg/infra/log"
+	"github.com/Seasheller/grafana/pkg/login/social"
+	m "github.com/Seasheller/grafana/pkg/models"
+	"github.com/Seasheller/grafana/pkg/plugins"
+	"github.com/Seasheller/grafana/pkg/setting"
+	"github.com/Seasheller/grafana/pkg/util"
 	. "github.com/smartystreets/goconvey/convey"
 )
 

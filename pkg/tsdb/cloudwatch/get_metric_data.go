@@ -6,12 +6,12 @@ import (
 	"fmt"
 	"time"
 
+	"github.com/Seasheller/grafana/pkg/components/null"
+	"github.com/Seasheller/grafana/pkg/components/simplejson"
+	"github.com/Seasheller/grafana/pkg/infra/metrics"
+	"github.com/Seasheller/grafana/pkg/tsdb"
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/cloudwatch"
-	"github.com/grafana/grafana/pkg/components/null"
-	"github.com/grafana/grafana/pkg/components/simplejson"
-	"github.com/grafana/grafana/pkg/infra/metrics"
-	"github.com/grafana/grafana/pkg/tsdb"
 )
 
 func (e *CloudWatchExecutor) executeGetMetricDataQuery(ctx context.Context, region string, queries map[string]*CloudWatchQuery, queryContext *tsdb.TsdbQuery) ([]*tsdb.QueryResult, error) {

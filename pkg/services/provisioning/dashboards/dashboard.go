@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/grafana/grafana/pkg/infra/log"
-	"github.com/grafana/grafana/pkg/util/errutil"
+	"github.com/Seasheller/grafana/pkg/infra/log"
+	"github.com/Seasheller/grafana/pkg/util/errutil"
 )
 
 type DashboardProvisionerImpl struct {

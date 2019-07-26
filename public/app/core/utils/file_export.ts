@@ -1,5 +1,6 @@
 import { isBoolean, isNumber, sortedUniq, sortedIndexOf, unescape as htmlUnescaped } from 'lodash';
 import { saveAs } from 'file-saver';
+import moment from 'moment';
 import { isNullOrUndefined } from 'util';
 import { dateTime, TimeZone } from '@grafana/data';
 
@@ -7,7 +8,7 @@ const DEFAULT_DATETIME_FORMAT = 'YYYY-MM-DDTHH:mm:ssZ';
 const POINT_TIME_INDEX = 1;
 const POINT_VALUE_INDEX = 0;
 
-const END_COLUMN = ';';
+const END_COLUMN = ',';
 const END_ROW = '\r\n';
 const QUOTE = '"';
 const EXPORT_FILENAME = 'grafana_data_export.csv';
@@ -51,7 +52,8 @@ function htmlDecoded(text: string) {
 }
 
 function formatSpecialHeader(useExcelHeader) {
-  return useExcelHeader ? `sep=${END_COLUMN}${END_ROW}` : '';
+  //  return useExcelHeader ? `sep=${END_COLUMN}${END_ROW}` : '';
+  return '';
 }
 
 function formatRow(row, addEndRowDelimiter = true) {
@@ -71,20 +73,38 @@ function formatRow(row, addEndRowDelimiter = true) {
 }
 
 export function convertSeriesListToCsv(seriesList, options: Partial<SeriesListToCsvColumnsOptions>) {
-  const { dateTimeFormat, excel, timezone } = { ...defaultOptions, ...options };
-  let text = formatSpecialHeader(excel) + formatRow(['Series', 'Time', 'Value']);
+  const { dateTimeFormat, excel } = { ...defaultOptions, ...options };
+  //let text = formatSpecialHeader(excel) + formatRow(['Series', 'Time', 'Value']);
+
+  let text = formatSpecialHeader(excel);
+  text += formatRow(['导出人', 'admin']);
+  text += formatRow(['导出时间', moment(new Date()).format(dateTimeFormat)]);
+  text += formatRow(['导出内容']);
+  text += formatRow([]);
+
+  text += formatRow(['房间', '点名', '位置', '点位属性', '单位', '时间', '值', '最小值', '最大值', '平均值']);
+
   for (let seriesIndex = 0; seriesIndex < seriesList.length; seriesIndex += 1) {
+    const seriesItemName = ['', '', '', '', ''];
+    const seriesItemAlias = seriesList[seriesIndex].alias.split('---');
+    const size = seriesItemAlias.length > 5 ? 5 : seriesItemAlias.length;
+    for (let num = 0; num < size; num++) {
+      seriesItemName[num] = seriesItemAlias[num];
+    }
+
     for (let i = 0; i < seriesList[seriesIndex].datapoints.length; i += 1) {
+      const pointTimeStr = moment(seriesList[seriesIndex].datapoints[i][POINT_TIME_INDEX]).format(dateTimeFormat);
+      const rowItem = [].concat(seriesItemName, [
+        pointTimeStr,
+        seriesList[seriesIndex].datapoints[i][POINT_VALUE_INDEX],
+      ]);
+      if (i === 0) {
+        rowItem.push(seriesList[seriesIndex].stats['min']);
+        rowItem.push(seriesList[seriesIndex].stats['max']);
+        rowItem.push(seriesList[seriesIndex].stats['avg'].toFixed(2));
+      }
       text += formatRow(
-        [
-          seriesList[seriesIndex].alias,
-          timezone === 'utc'
-            ? dateTime(seriesList[seriesIndex].datapoints[i][POINT_TIME_INDEX])
-                .utc()
-                .format(dateTimeFormat)
-            : dateTime(seriesList[seriesIndex].datapoints[i][POINT_TIME_INDEX]).format(dateTimeFormat),
-          seriesList[seriesIndex].datapoints[i][POINT_VALUE_INDEX],
-        ],
+        rowItem,
         i < seriesList[seriesIndex].datapoints.length - 1 || seriesIndex < seriesList.length - 1
       );
     }

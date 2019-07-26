@@ -3,8 +3,8 @@ package remotecache
 import (
 	"time"
 
+	"github.com/Seasheller/grafana/pkg/setting"
 	"github.com/bradfitz/gomemcache/memcache"
-	"github.com/grafana/grafana/pkg/setting"
 )
 
 const memcachedCacheType = "memcached"

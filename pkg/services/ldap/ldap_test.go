@@ -7,7 +7,7 @@ import (
 	. "github.com/smartystreets/goconvey/convey"
 	"gopkg.in/ldap.v3"
 
-	"github.com/grafana/grafana/pkg/infra/log"
+	"github.com/Seasheller/grafana/pkg/infra/log"
 )
 
 func TestPublicAPI(t *testing.T) {

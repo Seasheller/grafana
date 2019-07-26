@@ -4,14 +4,14 @@ import (
 	"os"
 	"strings"
 
+	"github.com/Seasheller/grafana/pkg/bus"
+	"github.com/Seasheller/grafana/pkg/cmd/grafana-cli/commands/datamigrations"
+	"github.com/Seasheller/grafana/pkg/cmd/grafana-cli/logger"
+	"github.com/Seasheller/grafana/pkg/cmd/grafana-cli/utils"
+	"github.com/Seasheller/grafana/pkg/services/sqlstore"
+	"github.com/Seasheller/grafana/pkg/setting"
 	"github.com/codegangsta/cli"
 	"github.com/fatih/color"
-	"github.com/grafana/grafana/pkg/bus"
-	"github.com/grafana/grafana/pkg/cmd/grafana-cli/commands/datamigrations"
-	"github.com/grafana/grafana/pkg/cmd/grafana-cli/logger"
-	"github.com/grafana/grafana/pkg/cmd/grafana-cli/utils"
-	"github.com/grafana/grafana/pkg/services/sqlstore"
-	"github.com/grafana/grafana/pkg/setting"
 )
 
 func runDbCommand(command func(commandLine utils.CommandLine, sqlStore *sqlstore.SqlStore) error) func(context *cli.Context) {

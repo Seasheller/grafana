@@ -5,8 +5,8 @@ import (
 
 	. "github.com/smartystreets/goconvey/convey"
 
-	"github.com/grafana/grafana/pkg/bus"
-	m "github.com/grafana/grafana/pkg/models"
+	"github.com/Seasheller/grafana/pkg/bus"
+	m "github.com/Seasheller/grafana/pkg/models"
 )
 
 func TestGrafanaLogin(t *testing.T) {

@@ -3,15 +3,15 @@ package mssql
 import (
 	"database/sql"
 	"fmt"
-	"github.com/grafana/grafana/pkg/setting"
+	"github.com/Seasheller/grafana/pkg/setting"
 	"strconv"
 
+	"github.com/Seasheller/grafana/pkg/infra/log"
+	"github.com/Seasheller/grafana/pkg/models"
+	"github.com/Seasheller/grafana/pkg/tsdb"
+	"github.com/Seasheller/grafana/pkg/util"
 	_ "github.com/denisenkom/go-mssqldb"
 	"github.com/go-xorm/core"
-	"github.com/grafana/grafana/pkg/infra/log"
-	"github.com/grafana/grafana/pkg/models"
-	"github.com/grafana/grafana/pkg/tsdb"
-	"github.com/grafana/grafana/pkg/util"
 )
 
 func init() {

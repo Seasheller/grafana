@@ -12,9 +12,9 @@ import (
 	"net"
 	"strconv"
 
-	"github.com/grafana/grafana/pkg/models"
-	"github.com/grafana/grafana/pkg/setting"
-	"github.com/grafana/grafana/pkg/util/errutil"
+	"github.com/Seasheller/grafana/pkg/models"
+	"github.com/Seasheller/grafana/pkg/setting"
+	"github.com/Seasheller/grafana/pkg/util/errutil"
 	gomail "gopkg.in/mail.v2"
 )
 

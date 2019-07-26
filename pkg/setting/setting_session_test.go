@@ -4,7 +4,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/grafana/grafana/pkg/infra/log"
+	"github.com/Seasheller/grafana/pkg/infra/log"
 	. "github.com/smartystreets/goconvey/convey"
 )
 

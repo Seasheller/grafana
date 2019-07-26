@@ -3,9 +3,9 @@ package migrator
 import (
 	"time"
 
+	"github.com/Seasheller/grafana/pkg/infra/log"
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/go-xorm/xorm"
-	"github.com/grafana/grafana/pkg/infra/log"
 	_ "github.com/lib/pq"
 	_ "github.com/mattn/go-sqlite3"
 )

@@ -3,7 +3,7 @@ package auth
 import (
 	"context"
 
-	"github.com/grafana/grafana/pkg/models"
+	"github.com/Seasheller/grafana/pkg/models"
 )
 
 type FakeUserAuthTokenService struct {

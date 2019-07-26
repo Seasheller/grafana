@@ -9,7 +9,7 @@ import (
 	. "github.com/smartystreets/goconvey/convey"
 	"golang.org/x/oauth2"
 
-	m "github.com/grafana/grafana/pkg/models"
+	m "github.com/Seasheller/grafana/pkg/models"
 )
 
 //nolint:goconst

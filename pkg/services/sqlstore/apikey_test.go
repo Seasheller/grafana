@@ -1,7 +1,7 @@
 package sqlstore
 
 import (
-	"github.com/grafana/grafana/pkg/models"
+	"github.com/Seasheller/grafana/pkg/models"
 	"github.com/stretchr/testify/assert"
 	"testing"
 	"time"

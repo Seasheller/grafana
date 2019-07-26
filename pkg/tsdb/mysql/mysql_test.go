@@ -8,13 +8,13 @@ import (
 	"testing"
 	"time"
 
+	"github.com/Seasheller/grafana/pkg/components/securejsondata"
+	"github.com/Seasheller/grafana/pkg/components/simplejson"
+	"github.com/Seasheller/grafana/pkg/models"
+	"github.com/Seasheller/grafana/pkg/services/sqlstore"
+	"github.com/Seasheller/grafana/pkg/services/sqlstore/sqlutil"
+	"github.com/Seasheller/grafana/pkg/tsdb"
 	"github.com/go-xorm/xorm"
-	"github.com/grafana/grafana/pkg/components/securejsondata"
-	"github.com/grafana/grafana/pkg/components/simplejson"
-	"github.com/grafana/grafana/pkg/models"
-	"github.com/grafana/grafana/pkg/services/sqlstore"
-	"github.com/grafana/grafana/pkg/services/sqlstore/sqlutil"
-	"github.com/grafana/grafana/pkg/tsdb"
 	. "github.com/smartystreets/goconvey/convey"
 )
 

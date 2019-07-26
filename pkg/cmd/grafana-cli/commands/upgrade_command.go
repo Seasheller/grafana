@@ -1,10 +1,10 @@
 package commands
 
 import (
+	"github.com/Seasheller/grafana/pkg/cmd/grafana-cli/logger"
+	s "github.com/Seasheller/grafana/pkg/cmd/grafana-cli/services"
+	"github.com/Seasheller/grafana/pkg/cmd/grafana-cli/utils"
 	"github.com/fatih/color"
-	"github.com/grafana/grafana/pkg/cmd/grafana-cli/logger"
-	s "github.com/grafana/grafana/pkg/cmd/grafana-cli/services"
-	"github.com/grafana/grafana/pkg/cmd/grafana-cli/utils"
 )
 
 func upgradeCommand(c utils.CommandLine) error {

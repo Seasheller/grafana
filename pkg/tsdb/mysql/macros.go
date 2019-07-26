@@ -5,8 +5,8 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/grafana/grafana/pkg/components/gtime"
-	"github.com/grafana/grafana/pkg/tsdb"
+	"github.com/Seasheller/grafana/pkg/components/gtime"
+	"github.com/Seasheller/grafana/pkg/tsdb"
 )
 
 const rsIdentifier = `([_a-zA-Z0-9]+)`

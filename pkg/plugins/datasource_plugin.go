@@ -7,11 +7,11 @@ import (
 	"path"
 	"time"
 
+	"github.com/Seasheller/grafana/pkg/infra/log"
+	"github.com/Seasheller/grafana/pkg/models"
+	"github.com/Seasheller/grafana/pkg/plugins/datasource/wrapper"
+	"github.com/Seasheller/grafana/pkg/tsdb"
 	"github.com/grafana/grafana-plugin-model/go/datasource"
-	"github.com/grafana/grafana/pkg/infra/log"
-	"github.com/grafana/grafana/pkg/models"
-	"github.com/grafana/grafana/pkg/plugins/datasource/wrapper"
-	"github.com/grafana/grafana/pkg/tsdb"
 	plugin "github.com/hashicorp/go-plugin"
 )
 

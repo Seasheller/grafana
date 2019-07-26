@@ -1,6 +1,6 @@
 package alerting
 
-import "github.com/grafana/grafana/pkg/components/null"
+import "github.com/Seasheller/grafana/pkg/components/null"
 
 // Job holds state about when the alert rule should be evaluated.
 type Job struct {

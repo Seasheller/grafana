@@ -246,6 +246,9 @@
       if (preloader.length) {
         preloader[0].className = "preloader preloader--done";
       }
+      if(window.grafanaBootData.user.id == 0){
+        document.getElementsByClassName("sidemenu")[0].style.display = "none";
+      }
     };
   </script>
 

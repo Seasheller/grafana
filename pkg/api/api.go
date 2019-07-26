@@ -1,12 +1,12 @@
 package api
 
 import (
+	"github.com/Seasheller/grafana/pkg/api/avatar"
+	"github.com/Seasheller/grafana/pkg/api/dtos"
+	"github.com/Seasheller/grafana/pkg/api/routing"
+	"github.com/Seasheller/grafana/pkg/middleware"
+	"github.com/Seasheller/grafana/pkg/models"
 	"github.com/go-macaron/binding"
-	"github.com/grafana/grafana/pkg/api/avatar"
-	"github.com/grafana/grafana/pkg/api/dtos"
-	"github.com/grafana/grafana/pkg/api/routing"
-	"github.com/grafana/grafana/pkg/middleware"
-	"github.com/grafana/grafana/pkg/models"
 )
 
 func (hs *HTTPServer) registerRoutes() {

@@ -13,7 +13,7 @@ import (
 
 	"golang.org/x/net/context/ctxhttp"
 
-	"github.com/grafana/grafana/pkg/util"
+	"github.com/Seasheller/grafana/pkg/util"
 )
 
 type Webhook struct {
