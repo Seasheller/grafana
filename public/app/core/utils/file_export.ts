@@ -1,8 +1,9 @@
+/* tslint:disable:import-blacklist */
 import { isBoolean, isNumber, sortedUniq, sortedIndexOf, unescape as htmlUnescaped } from 'lodash';
 import { saveAs } from 'file-saver';
-import moment from 'moment';
 import { isNullOrUndefined } from 'util';
 import { dateTime, TimeZone } from '@grafana/data';
+import moment from 'moment';
 
 const DEFAULT_DATETIME_FORMAT = 'YYYY-MM-DDTHH:mm:ssZ';
 const POINT_TIME_INDEX = 1;
